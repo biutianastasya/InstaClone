@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "272822759060",
+    "firebase_url": "https://instaclone-app-f7f32-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "instaclone-app-f7f32",
+    "storage_bucket": "instaclone-app-f7f32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272822759060:android:f36e5ab5611a798b8f0e81",
+        "android_client_info": {
+          "package_name": "com.example.instaclone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJqQ1sRgcj62hk0lJD3rDnnCprtXnbhbs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

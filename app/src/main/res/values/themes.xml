@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <attr name="colorBlack" format="color" />
+    <attr name="colorBlue" format="color" />
+
+    <style name="Theme.InstaClone" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#5c32c7</item>
+        <item name="colorPrimaryDark">#5c32c7</item>
+        <item name="colorAccent">#ff68a5</item>
+        <item name="colorBlack">#c2bdbf</item>
+        <item name="colorBlue">#5552ff</item>
+
+    </style>
+</resources>
