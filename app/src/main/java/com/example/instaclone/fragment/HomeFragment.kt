@@ -49,24 +49,26 @@ class HomeFragment : Fragment() {
             startActivity(intent)
         }
 
-        val imgPost: ImageView = view.findViewById(R.id.imgPost)
-        val heartLike: ImageView = view.findViewById(R.id.heart_like)
-        val comment: ImageView = view.findViewById(R.id.comment)
-        val share: ImageView = view.findViewById(R.id.share)
-        val bookmark: ImageView = view.findViewById(R.id.bookmark)
+
+
+//        val imgPost: ImageView = view.findViewById(R.id.imgPost)
+//        val heartLike: ImageView = view.findViewById(R.id.heart_like)
+//        val comment: ImageView = view.findViewById(R.id.comment)
+//        val share: ImageView = view.findViewById(R.id.share)
+//        val bookmark: ImageView = view.findViewById(R.id.bookmark)
 
         // Set the image resource from drawable
-        imgPost.setImageResource(R.drawable.cat2)
-        heartLike.setImageResource(R.drawable.heart)
-        comment.setImageResource(R.drawable.comment)
-        share.setImageResource(R.drawable.send_icon)
-        bookmark.setImageResource(R.drawable.action_bookmark_border)
+//        imgPost.setImageResource(R.drawable.cat2)
+//        heartLike.setImageResource(R.drawable.heart)
+//        comment.setImageResource(R.drawable.comment)
+//        share.setImageResource(R.drawable.send_icon)
+//        bookmark.setImageResource(R.drawable.action_bookmark_border)
 
-        comment.setOnClickListener {
-            // Create an Intent to start ViewCommentActivity
-            val intent = Intent(activity, ViewCommentActivity::class.java)
-            startActivity(intent)
-        }
+//        comment.setOnClickListener {
+//            // Create an Intent to start ViewCommentActivity
+//            val intent = Intent(activity, ViewCommentActivity::class.java)
+//            startActivity(intent)
+//        }
 
         return view
     }

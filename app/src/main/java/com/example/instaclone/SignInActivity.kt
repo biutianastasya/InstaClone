@@ -32,6 +32,13 @@ class SignInActivity : AppCompatActivity() {
         signinBtn.setOnClickListener {
             val email = findViewById<EditText>(R.id.email_login).text.toString()
             val password = findViewById<EditText>(R.id.password_login).text.toString()
+
+            if (email.isEmpty() || password.isEmpty()) {
+                Toast.makeText(baseContext, "Please fill out all fields.",
+                    Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {

@@ -26,8 +26,8 @@ class SignUpActivity : AppCompatActivity() {
         // Initialize Firebase Auth
         auth = FirebaseAuth.getInstance()
 
-        progressBar = findViewById(R.id.progressBar)
-        progressText = findViewById(R.id.progressText)
+//        progressBar = findViewById(R.id.progressBar)
+//        progressText = findViewById(R.id.progressText)
 
         val signinLinkBtn = findViewById<Button>(R.id.signin_link_btn)
         val signupBtn = findViewById<Button>(R.id.signup_btn)
@@ -53,8 +53,8 @@ class SignUpActivity : AppCompatActivity() {
             TextUtils.isEmpty(email) -> Toast.makeText(this, "Email is Required", Toast.LENGTH_SHORT).show()
             TextUtils.isEmpty(password) -> Toast.makeText(this, "Password is Required", Toast.LENGTH_SHORT).show()
             else -> {
-                progressBar.visibility = ProgressBar.VISIBLE
-                progressText.text = getString(R.string.please_wait_message)
+//                progressBar.visibility = ProgressBar.VISIBLE
+//                progressText.text = getString(R.string.please_wait_message)
 
                 auth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener { task ->
@@ -64,7 +64,7 @@ class SignUpActivity : AppCompatActivity() {
                             val message = task.exception?.toString()
                             Toast.makeText(this, "Error: $message", Toast.LENGTH_SHORT).show()
                             auth.signOut()
-                            progressBar.visibility = ProgressBar.GONE
+//                            progressBar.visibility = ProgressBar.GONE
                         }
                     }
             }
@@ -77,7 +77,7 @@ class SignUpActivity : AppCompatActivity() {
 
         val userMap = hashMapOf<String, Any>(
             "uid" to (currentUserID ?: ""),
-            "fullname" to fullName.toLowerCase(),
+            "fullname" to fullName,
             "username" to userName.toLowerCase(),
             "email" to email,
             "bio" to "Hey, I'm using InstaClone App by Bannerd",
@@ -85,7 +85,7 @@ class SignUpActivity : AppCompatActivity() {
         )
 
         usersRef.updateChildren(userMap).addOnCompleteListener { task ->
-            progressBar.visibility = ProgressBar.GONE
+//            progressBar.visibility = ProgressBar.GONE
             if (task.isSuccessful) {
                 Toast.makeText(this, "Account has been created successfully", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this@SignUpActivity, MainActivity::class.java)
