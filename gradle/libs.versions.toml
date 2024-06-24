@@ -1,7 +1,8 @@
 [versions]
-agp = "8.4.0"
+agp = "8.4.1"
 firebaseBomVersion = "33.0.0"
 firebaseFirestore = "25.0.0"
+firebaseUiDatabase = "8.2.0"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -27,6 +28,7 @@ picasso = "2.71828"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 firebase-firestore = { module = "com.google.firebase:firebase-firestore", version.ref = "firebaseFirestore" }
+firebase-ui-database = { module = "com.firebaseui:firebase-ui-database", version.ref = "firebaseUiDatabase" }
 google-firebase-auth = { module = "com.google.firebase:firebase-auth" }
 google-sqareup-picasso = { module = "com.sqareup.picasso:2.7828" }
 google-firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBomVersion" }
